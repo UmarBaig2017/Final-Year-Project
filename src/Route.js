@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Router } from 'react-router-dom';
 import App from './components/App'
-
+import Contact from './components/contact'
 
 import history from './History';
 
@@ -14,8 +14,9 @@ class Routers extends Component {
                 <div>
             
     
+                <Route exact path="/" component={Contact} />
+            { /*    <Route  path="/Contact" component={Contact} />*/}
                     
-                    <Route exact path="/" component={App} />
                    
                     
                 </div>
